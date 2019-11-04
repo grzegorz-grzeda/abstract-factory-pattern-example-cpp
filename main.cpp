@@ -1,10 +1,9 @@
-#include <iostream>
 #include "SystemFactory.hpp"
 #include "App.hpp"
 
 int main(int argc, char *argv[])
 {
-	auto factory = new SystemFactory(false);
+	auto factory = new SystemFactory(true);
 	auto doer = factory->getNewDoer();
 	auto waiter = factory->getNewWaiter();
 
